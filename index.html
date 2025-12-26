@@ -47,16 +47,15 @@
             <h2 class="hero__title">
                 会議も、教室も、ちょっとした集まりも。<br>
                 北上本通りの自由に使える<br class="sp-only">レンタルスペース
-            </h2>
-            <p class="hero__lead">
-                北上市本通り・さくら野百貨店向かい。<br>
-                1時間500円〜の圧倒的低価格。<br>
-                会議・撮影・パーティー・教室など、<br class="sp-only">自由な用途でご利用いただけます。
-            </p>
-            <div class="hero__cta-group">
-                <a href="#contact" class="btn btn--primary">空き状況を問い合わせる</a>
-                <a href="tel:0120560626" class="btn btn--secondary"><i class="fas fa-phone"></i> 0120-560-626</a>
-            </div>
+                <p class="hero__lead">
+                    北上市本通り・さくら野百貨店向かい。<br>
+                    1時間500円〜の圧倒的低価格。<br>
+                    会議・撮影・パーティー・教室など、<br class="sp-only">自由な用途でご利用いただけます。
+                </p>
+                <div class="hero__cta-group">
+                    <a href="#contact" class="btn btn--primary">空き状況を問い合わせる</a>
+                    <a href="tel:0120560626" class="btn btn--secondary"><i class="fas fa-phone"></i> 0120-560-626</a>
+                </div>
         </div>
     </section>
 
@@ -273,22 +272,29 @@
 
                 <div class="contact__form-wrapper">
                     <p class="contact__form-label">Webからのご予約・お問い合わせ</p>
-                    <form class="contact__form">
+                    <script type="text/javascript">var submitted = false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {window.location='thanks.html';}"></iframe>
+                    <form
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSciMgOhDAWVqdeayFm5VQ5SilyfMLI0yBzR0dTsL5X3DrELVw/formResponse"
+                        method="post" class="contact__form" target="hidden_iframe"
+                        onsubmit="submitted=true; this.querySelector('button[type=submit]').disabled = true;">
                         <div class="form-group">
                             <label for="name">お名前 <span class="required">必須</span></label>
-                            <input type="text" id="name" name="name" required placeholder="例：北上 太郎">
+                            <input type="text" id="name" name="entry.1286951097" required placeholder="例：北上 太郎">
                         </div>
                         <div class="form-group">
                             <label for="email">メールアドレス <span class="required">必須</span></label>
-                            <input type="email" id="email" name="email" required placeholder="例：info@example.com">
+                            <input type="email" id="email" name="entry.164301903" required
+                                placeholder="例：info@example.com">
                         </div>
                         <div class="form-group">
                             <label for="tel">電話番号</label>
-                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
+                            <input type="tel" id="tel" name="entry.294347405" placeholder="例：090-1234-5678">
                         </div>
                         <div class="form-group">
                             <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
-                            <textarea id="message" name="message" rows="5" required
+                            <textarea id="message" name="entry.1426024977" rows="5" required
                                 placeholder="利用希望日時や用途、ご質問などをご記入ください。"></textarea>
                         </div>
                         <button type="submit" class="btn btn--submit">送信する</button>
